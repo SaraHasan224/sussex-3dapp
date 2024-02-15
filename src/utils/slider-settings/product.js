@@ -1,4 +1,4 @@
-const ProductSlider = {
+export const ProductSlider = {
     infinite: true,
     speed: 300,
     slidesToShow: 4,
@@ -30,7 +30,3 @@ const ProductSlider = {
         },
     ],
 };
-
-export {
-    ProductSlider
-}

@@ -138,11 +138,6 @@ const Footer = ({
                               aria-hidden="true"></i>
                           </a>
                         </li>
-                        <li>
-                          <a href="https://rss.com" target="_blank">
-                            <i className="fa fa-rss" aria-hidden="true"></i>
-                          </a>
-                        </li>
                       </ul>
                     </div>
                   </div>

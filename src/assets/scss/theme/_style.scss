@@ -1033,32 +1033,6 @@ header {
       color: var(--theme-deafult);
     }
   }
-  &.marketplace {
-    &.header-tools {
-      position: relative;
-      width: 100%;
-      top: 0;
-    }
-    .top-header {
-      background-color: var(--theme-deafult);
-      .header-contact {
-        li {
-          color: white;
-        }
-      }
-      .header-dropdown {
-        li {
-          color: white;
-          a {
-            color: white;
-            i {
-              color: white;
-            }
-          }
-        }
-      }
-    }
-  }
 }
 .header-christmas.fixed {
   background: var(--theme-deafult);
@@ -1405,7 +1379,7 @@ header {
     display: flex;
     align-items: center;
     .navbar {
-      display: inline-block;
+      display: none;
       padding: 40px 45px 40px 0;
       i {
         font-size: 28px;
@@ -2417,6 +2391,10 @@ header {
         display: block;
         text-transform: capitalize;
         margin-top: 5px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
         &:first-child {
           margin-top: 0;
         }
@@ -4362,7 +4340,7 @@ header {
             form {
               .form-group {
                 margin: 0 auto;
-                text-align: center;
+                // text-align: center;
                 .form-control {
                   padding-top: 15px;
                   padding-bottom: 15px;
@@ -4902,109 +4880,6 @@ header {
       font-size: 18px;
       color: var(--theme-deafult);
     }
-  }
-}
-.header-tools {
-  position: absolute;
-  width: 100%;
-  top: 35px;
-  z-index: 1;
-  background-color: transparent;
-  .main-navbar {
-    .nav-menu {
-      > li {
-        > a {
-          padding-top: 25px;
-          padding-bottom: 25px;
-        }
-      }
-    }
-  }
-  .container {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .top-header {
-    background-color: transparent;
-    .container {
-      background-color: var(--theme-deafult);
-    }
-    .header-contact {
-      padding: 10px 0;
-      li {
-        color: $white;
-      }
-    }
-    .header-dropdown {
-      li {
-        color: $white;
-        padding: 10px 25px;
-        padding-right: 0;
-        a {
-          color: $white;
-          i {
-            color: $white;
-          }
-        }
-        &:hover {
-          i {
-            color: $white;
-          }
-        }
-      }
-    }
-  }
-  .logo-menu-part {
-    > .container {
-      background-color: #fff;
-      border-bottom: 2px solid var(--theme-deafult);
-    }
-  }
-  .main-menu {
-    .menu-left {
-      .navbar {
-        padding: 25px 45px 25px 0;
-      }
-    }
-    .brand-logo {
-      padding-top: 25px;
-      padding-bottom: 25px;
-    }
-    .icon-nav {
-      ul {
-        li {
-          padding-left: 20px;
-        }
-      }
-    }
-  }
-  .sm-horizontal {
-    > li {
-      > a {
-        padding-top: 25px;
-        padding-bottom: 25px;
-        &:hover,
-        &:active,
-        &:focus,
-        &.highlighted {
-          padding-top: 25px;
-          padding-bottom: 25px;
-        }
-      }
-    }
-    li {
-      .lable-nav {
-        top: 5px;
-      }
-    }
-  }
-  .onhover-div {
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
-  .cart_qty_cls {
-    top: 16%;
-    right: -14px;
   }
 }
 .tools-bg {
@@ -11427,7 +11302,7 @@ table {
             form {
               .form-group {
                 margin: 0 auto;
-                text-align: center;
+                // text-align: center;
                 .form-control {
                   padding-top: 15px;
                   padding-bottom: 15px;

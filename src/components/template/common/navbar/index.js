@@ -123,7 +123,7 @@ const NavBar = () => {
     <div>
       <div className="main-navbar">
         <div id="mainnav">
-          <div className="toggle-nav" onClick={openNav.bind(this)}>
+          <div className="toggle-nav" style={navClose} onClick={openNav.bind(this)}>
             <i className="fa fa-bars sidebar-bar"></i>
           </div>
           <ul className="nav-menu" style={navClose}>

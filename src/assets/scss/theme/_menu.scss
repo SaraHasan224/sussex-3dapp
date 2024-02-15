@@ -1,9 +1,23 @@
-@mixin round_corner($amount, $chainable: "ul > li:last-child > ", $level: 4, $chain_prefix: "> li:last-child > ", $chain: "", $selector: "") {
+@mixin round_corner(
+  $amount,
+  $chainable: "ul > li:last-child > ",
+  $level: 4,
+  $chain_prefix: "> li:last-child > ",
+  $chain: "",
+  $selector: ""
+) {
   $chain: $chain_prefix;
   $selector: $chain + "a, " + $chain + "*:not(ul) a, " + $chain + "ul";
   @for $i from 1 through $level {
     $chain: $chain + $chainable;
-    $selector: $selector + "," + $chain + " a, " + $chain + "*:not(ul) a, " + $chain + " ul";
+    $selector: $selector +
+      "," +
+      $chain +
+      " a, " +
+      $chain +
+      "*:not(ul) a, " +
+      $chain +
+      " ul";
   }
   #{$selector} {
     border-radius: 0 0 0 0;
@@ -12,7 +26,12 @@
   $selector: $chain + "a.highlighted, " + $chain + "*:not(ul) a.highlighted";
   @for $i from 1 through $level {
     $chain: $chain + $chainable;
-    $selector: $selector + "," + $chain + " a.highlighted, " + $chain + "*:not(ul) a.highlighted";
+    $selector: $selector +
+      "," +
+      $chain +
+      " a.highlighted, " +
+      $chain +
+      "*:not(ul) a.highlighted";
   }
   #{$selector} {
     border-radius: 0;
@@ -144,7 +163,10 @@ $theme-deafult__collapsible-item-color: $theme-deafult__white !default;
 $theme-deafult__collapsible-item-bg: $theme-deafult !default;
 $theme-deafult__collapsible-item-current-color: $theme-deafult__white !default;
 $theme-deafult__collapsible-item-current-bg: $theme-deafult !default;
-$theme-deafult__collapsible-item-disabled-color: lighten($theme-deafult, 30%) !default;
+$theme-deafult__collapsible-item-disabled-color: lighten(
+  $theme-deafult,
+  30%
+) !default;
 $theme-deafult__collapsible-item-padding-vertical: 10px !default;
 $theme-deafult__collapsible-item-padding-horizontal: 20px !default;
 
@@ -163,7 +185,10 @@ $theme-deafult__collapsible-sub-item-color: $theme-deafult-dark !default;
 $theme-deafult__collapsible-sub-item-bg: transparent !default;
 $theme-deafult__collapsible-sub-item-current-color: $theme-deafult__white !default;
 $theme-deafult__collapsible-sub-item-current-bg: $theme-deafult !default;
-$theme-deafult__collapsible-sub-item-disabled-color: darken($theme-deafult__white, 30%) !default;
+$theme-deafult__collapsible-sub-item-disabled-color: darken(
+  $theme-deafult__white,
+  30%
+) !default;
 
 // Items separators
 $theme-deafult__collapsible-sub-separators-color: rgba(0, 0, 0, 0.05) !default;
@@ -205,7 +230,10 @@ $theme-deafult__desktop-sub-item-hover-color: $theme-deafult__white !default;
 $theme-deafult__desktop-sub-item-hover-bg: $theme-deafult !default;
 $theme-deafult__desktop-sub-item-current-color: $theme-deafult__white !default;
 $theme-deafult__desktop-sub-item-current-bg: $theme-deafult !default;
-$theme-deafult__desktop-sub-item-disabled-color: darken($theme-deafult__white, 30%) !default;
+$theme-deafult__desktop-sub-item-disabled-color: darken(
+  $theme-deafult__white,
+  30%
+) !default;
 $theme-deafult__desktop-sub-item-padding-vertical: 9px !default;
 $theme-deafult__desktop-sub-item-padding-horizontal: 23px !default;
 
@@ -214,7 +242,8 @@ $theme-deafult__desktop-sub-item-padding-horizontal: 23px !default;
 // ----------------------------------------------------------
 
 // calc item height and sub menus toggle button size
-$theme-deafult__item-height: $theme-deafult__line-height + $theme-deafult__collapsible-item-padding-vertical * 2;
+$theme-deafult__item-height: $theme-deafult__line-height +
+  $theme-deafult__collapsible-item-padding-vertical * 2;
 // set toggle button size to 80% of item height
 $theme-deafult__toggle-size: floor($theme-deafult__item-height * 0.8);
 $theme-deafult__toggle-spacing: floor($theme-deafult__item-height * 0.1);
@@ -684,7 +713,8 @@ header {
       width: $theme-deafult__toggle-size;
       height: $theme-deafult__toggle-size;
       overflow: hidden;
-      font: bold #{$theme-deafult__font-size-small}/#{$theme-deafult__toggle-size} monospace !important;
+      font: bold #{$theme-deafult__font-size-small}/#{$theme-deafult__toggle-size}
+        monospace !important;
       text-align: center;
       text-shadow: none;
       border-radius: $theme-deafult__border-radius-small;
@@ -1331,12 +1361,14 @@ header {
       overflow: hidden;
       border-width: 8px; // tweak size of the arrow
       border-style: dashed dashed solid dashed;
-      border-color: transparent transparent $theme-deafult__desktop-sub-item-color transparent;
+      border-color: transparent transparent
+        $theme-deafult__desktop-sub-item-color transparent;
     }
     .scroll-down-arrow {
       top: 6px;
       border-style: solid dashed dashed dashed;
-      border-color: $theme-deafult__desktop-sub-item-color transparent transparent transparent;
+      border-color: $theme-deafult__desktop-sub-item-color transparent
+        transparent transparent;
     }
     // Main menu box
     &.sm-rtl {
@@ -1353,7 +1385,8 @@ header {
       }
       > li {
         &:first-child {
-          border-left: $theme-deafult__desktop-separators-size solid $theme-deafult__desktop-separators-color;
+          border-left: $theme-deafult__desktop-separators-size solid
+            $theme-deafult__desktop-separators-color;
         }
         &:last-child {
           border-left: 0;
@@ -1371,7 +1404,8 @@ header {
     // Main menu box
     &.sm-vertical {
       a {
-        padding: $theme-deafult__desktop-vertical-item-padding-vertical $theme-deafult__desktop-vertical-item-padding-horizontal;
+        padding: $theme-deafult__desktop-vertical-item-padding-vertical
+          $theme-deafult__desktop-vertical-item-padding-horizontal;
         .sub-arrow {
           &:before {
             content: "\f105";
@@ -1465,6 +1499,13 @@ header {
 }
 @media (max-width: 1199px) {
   header {
+    .main-menu {
+      .menu-left {
+        .navbar {
+          display: inline-block !important;
+        }
+      }
+    }
     .main-navbar {
       .nav-menu {
         position: fixed;
@@ -2070,6 +2111,7 @@ header {
     }
   }
   .mobile-fix-option {
+    display: none;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -2206,6 +2248,7 @@ header {
           }
         }
         .mobile-search {
+          display: none;
           right: 80%;
           z-index: 1;
           i {

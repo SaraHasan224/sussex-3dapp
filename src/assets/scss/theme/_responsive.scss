@@ -820,30 +820,6 @@ body {
         }
       }
     }
-    &.header-tools {
-      .toggle-nav {
-        padding-top: 25px;
-        padding-bottom: 25px;
-      }
-      .pixelstrap {
-        > li {
-          > a {
-            padding: 10px 15px !important;
-            &:hover,
-            &:active,
-            &:focus,
-            &.highlighted {
-              padding: 10px 15px;
-            }
-          }
-        }
-        li {
-          .lable-nav {
-            top: 5px;
-          }
-        }
-      }
-    }
   }
   .sticky {
     &.fixed {
@@ -1700,33 +1676,6 @@ body {
 }
 
 @media (max-width: 991px) {
-  header {
-    &.header-tools {
-      position: relative;
-      top: 0;
-      .top-header {
-        background-color: $theme-deafult;
-        .container {
-          background-color: transparent;
-        }
-      }
-      .logo-menu-part {
-        background-color: white;
-        > .container {
-          border-bottom: none;
-        }
-      }
-      &.stickycls {
-        position: fixed;
-        background-color: white;
-      }
-    }
-    &.header-christmas {
-      position: relative;
-      background-color: #e34041;
-      margin-bottom: -50px;
-    }
-  }
   .masonry-grid-col{
     .isotopeSelector{
       width: 33.33% !important;
@@ -4715,15 +4664,6 @@ body {
         }
       }
     }
-    &.header-tools {
-      .top-header {
-        .header-dropdown {
-          li {
-            padding: 0;
-          }
-        }
-      }
-    }
   }
   .portfolio-padding {
     padding-bottom: 15px;
@@ -4811,17 +4751,6 @@ body {
   section,
   .section-t-space {
     padding-top: 30px;
-  }
-  header {
-    &.header-tools {
-      .top-header {
-        .header-dropdown {
-          li {
-            padding: 0;
-          }
-        }
-      }
-    }
   }
   h2 {
     font-size: 24px;

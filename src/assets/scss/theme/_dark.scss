@@ -91,13 +91,6 @@ body {
       background-color: $dark-body;
       transition: all 0.3s ease;
     }
-
-    .header-tools {
-      .top-header {
-        background-color: transparent;
-      }
-    }
-  
     header {
       background-color: $dark-body;
       transition: all 0.3s ease;
@@ -146,20 +139,6 @@ body {
           }
         }
       }
-  
-      &.header-tools {
-        background-color: transparent;
-        transition: all 0.3s ease;
-  
-        .logo-menu-part {
-          > .container {
-            background-color: $dark-body;
-            transition: all 0.3s ease;
-            border-color: $dark-border;
-          }
-        }
-      }
-  
       &.left-header {
         .top-header {
           background-color: $dark-body;
@@ -2822,19 +2801,6 @@ body {
         background-color: $dark-body;
       }
     }
-    .header-tools {
-      .main-menu {
-        .icon-nav {
-          ul {
-            li {
-              &.mobile-search {
-                filter: invert(1);
-              }
-            }
-          }
-        }
-      }
-    }
     .gym-product {
       .product-box {
         .product-detail {
@@ -3219,16 +3185,6 @@ body {
       .dashboard-left {
         background-color: $dark-top;
         box-shadow: none;
-      }
-      header {
-        &.header-tools {
-          .logo-menu-part {
-            background-color: $dark-body;
-          }
-        }
-        &.header-christmas {
-          background-color: #e34041;
-        }
       }
       .service_slide {
         .service-home {

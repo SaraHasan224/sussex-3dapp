@@ -11,10 +11,11 @@ import {
     Service,
     Instagram,
     LogoBlock,
-    Footer
+    Footer,
 } from "../../components"
 import {
-    TopCollection
+    TopCollection,
+    Category
 } from "../../containers"
 import {
   ProductSlider
@@ -24,7 +25,7 @@ import {
 function HomePage() {
     return (
         <>
-            {/* <CustomModal /> */}
+            <CustomModal />
             <Header topClass="top-header" />
             <Banner />
             <Service
@@ -41,6 +42,7 @@ function HomePage() {
                 cartClass="cart-info"
             /> 
             <Parallax />
+            <Category />
             <Instagram type="goggles" />
             <div className="section-b-space">
                 <LogoBlock />

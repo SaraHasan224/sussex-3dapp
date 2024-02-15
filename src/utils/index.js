@@ -8,11 +8,13 @@ import {
 import {
     PRODUCT_DATA,
     COLLECTION_BANNER,
-    BRANDS_DATA
+    BRANDS_DATA,
+    CATEGORY_DATA
 } from "./data"
 import {
-    ProductSlider
-} from "./slider-settings/product"
+    ProductSlider,
+    CategorySlider
+} from "./slider-settings"
 
 export {
     ROUTE_CONSTANTS,
@@ -20,6 +22,8 @@ export {
     MENUITEMS,
     PRODUCT_DATA,
     COLLECTION_BANNER,
+    CATEGORY_DATA,
     BRANDS_DATA,
-    ProductSlider
+    ProductSlider,
+    CategorySlider
 }

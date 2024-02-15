@@ -9,6 +9,13 @@ import CART from "../../assets/images/icon/cart.png";
 import BANNER1 from "../../assets/images/banners/collection/banner1.png";
 import BANNER2 from "../../assets/images/banners/collection/banner2.png";
 import BANNER3 from "../../assets/images/banners/collection/banner3.png";
+
+import CATEGORY1 from "../../assets/images/banners/category/1.png";
+import CATEGORY2 from "../../assets/images/banners/category/2.png";
+import CATEGORY3 from "../../assets/images/banners/category/3.png";
+import CATEGORY4 from "../../assets/images/banners/category/4.png";
+import CATEGORY5 from "../../assets/images/banners/category/5.png";
+
 //INSTAGRAM
 import B_1 from "../../assets/images/brands/1.png"
 import B_2 from "../../assets/images/brands/2.png"
@@ -49,6 +56,13 @@ export const IMAGE_SRCS = {
         BANNER1,
         BANNER2,
         BANNER3,
+    },
+    CATEGORY: {
+        CATEGORY1,
+        CATEGORY2,
+        CATEGORY3,
+        CATEGORY4,
+        CATEGORY5
     },
     OFFERBANNER,
     FASHION,

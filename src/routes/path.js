@@ -4,7 +4,7 @@ import Home from '../containers/homepage';
 
 const routes = [
   {
-    path: ROUTE_CONSTANTS.BASE,
+    path: "*",
     exact: false,
     element: <Home/>,
     view: "Base",
